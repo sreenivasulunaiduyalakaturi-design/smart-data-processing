@@ -1,0 +1,34 @@
+SMART DATA PROCESSING REPORT
+Generated: 2026-11-20 05:54:08
+============================================================
+
+KEY INSIGHTS
+------------------------------------------------------------
+* Dataset has 14 rows and 7 columns.
+* Column 'age' has 1 outlier(s).
+* Column 'salary' has 1 outlier(s).
+* Strong positive correlation between 'age' and 'experience_years' (0.992).
+
+SUMMARY STATISTICS
+------------------------------------------------------------
+                 count unique   top freq                        mean                  min                  25%                  50%                  75%                  max            std
+employee_id       14.0    NaN   NaN  NaN                         7.5                  1.0                 4.25                  7.5                10.75                 14.0         4.1833
+name                14     14  Amit    1                         NaN                  NaN                  NaN                  NaN                  NaN                  NaN            NaN
+department          14      3    IT    7                         NaN                  NaN                  NaN                  NaN                  NaN                  NaN            NaN
+age               14.0    NaN   NaN  NaN                   32.142857                 24.0                28.25                 31.0                 34.5                 45.0        5.89468
+salary            14.0    NaN   NaN  NaN               122928.571429              43000.0              48500.0              55000.0              73750.0             950000.0  238471.886518
+experience_years  14.0    NaN   NaN  NaN                    8.428571                  2.0                 4.25                  7.5                11.25                 20.0       5.487248
+join_date           14    NaN   NaN  NaN  2016-01-15 15:25:42.857142  2004-01-05 00:00:00  2013-04-07 12:00:00  2017-02-16 00:00:00  2020-02-17 12:00:00  2022-08-22 00:00:00            NaN
+
+OUTLIERS (IQR method)
+------------------------------------------------------------
+age: 1 outlier(s), valid range [18.88, 43.88], rows [12]
+salary: 1 outlier(s), valid range [10625.00, 111625.00], rows [10]
+
+CORRELATION MATRIX
+------------------------------------------------------------
+                  employee_id    age  salary  experience_years
+employee_id             1.000  0.184   0.249             0.221
+age                     0.184  1.000   0.097             0.992
+salary                  0.249  0.097   1.000             0.085
+experience_years        0.221  0.992   0.085             1.000
